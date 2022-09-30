@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- css files -->
+        <link rel="stylesheet" href="../css/rules.css" />
+        <link rel="stylesheet" href="../css/about-us.css" />
+        <!-- Google icons -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+            rel="stylesheet"
+        />
+        <!-- Font awesome icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>About us</title>
+    </head>
+    <body>
+        <div id="top"></div>
+        <div class="welcome-section">
+            <header>
+                <a href="#" class="logo">
+                    <img
+                        src="../images/logo/LogoMakr-6crdtn-third.png"
+                        alt="logo"
+                    />
+                </a>
+                <ul class="nav-bar">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="inspiration.html">Get Inspiration</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </header>
+            <div class="hero-description">
+                <div class="container">
+                    <h1>About Us</h1>
+                    <p>
+                        Our company was founded on the idea of creating the most
+                        efficient workspace, with the best ergonomic tools you
+                        can find. With the tools Ergon provides, your workspace
+                        will have everything you need to get your work done more
+                        accurately.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="team-section">
+            <div class="container">
+                <h1>Meet the team behind Ergon</h1>
+                <div class="team-members">
+                    <div class="omar">
+                        <!-- <img
+                            src="../images/about-images/Matthew-Encina-001-futur.jpg"
+                            alt="matthew"
+                        /> -->
+                        <div class="member-description">
+                            <h2>Omar Ajaj</h2>
+                            <p>Developer & Designer</p>
+                        </div>
+                    </div>
+                    <div class="ahmad-mahmoud">
+                        <!-- <img src="../images/about-images/me.jpg" alt="ahmad" /> -->
+                        <div class="member-description">
+                            <h2>Ahmad Mahmoud</h2>
+                            <p>Content Creator & Developer</p>
+                        </div>
+                    </div>
+
+                    <div class="ahmad-jarwan">
+                        <!-- <img
+                            src="../images/about-images/mike wat.webp"
+                            alt="mike"
+                        /> -->
+                        <div class="member-description">
+                            <h2>Ahmad Jarwan</h2>
+                            <p>Developer & Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hiring-section">
+            <div class="container">
+                <h2>We are hiring</h2>
+                <form action="#" class="cleanForm" method="post">
+                    <div class="form-row">
+                        <div>
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Your Name"
+                                id="name"
+                            />
+                        </div>
+                        <div>
+                            <label for="phone">Phone number</label>
+                            <input
+                                type="number"
+                                name="number"
+                                placeholder="+962"
+                                id="phone"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="example@gmail.com"
+                                id="email"
+                            />
+                        </div>
+                        <div>
+                            <label for="address">Address</label>
+                            <input
+                                type="text"
+                                name="suggestions"
+                                placeholder="..."
+                                id="address"
+                            />
+                        </div>
+                    </div>
+                    <button
+                        type="button"
+                        class="submit"
+                        id="save"
+                        onclick="fillTable()"
+                    >
+                        Send Survey
+                    </button>
+                    <!-- <input
+                        type="submit"
+                        value="Send Survey"
+                        class="submit"
+                        id="save"
+                    /> -->
+                </form>
+            </div>
+        </div>
+        <table id="user-date">
+            <tr id="first_row">
+                <th>Name</th>
+                <th>Number</th>
+                <th>E-mail</th>
+                <th>Address</th>
+            </tr>
+            <tr id="sconed_row">
+                <td id="name1"></td>
+                <td id="number1"></td>
+                <td id="e-mail1"></td>
+                <td id="address1"></td>
+            </tr>
+        </table>
+
+        <footer>
+            <div class="social-links">
+                <a href="https://www.facebook.com/" target="_blank"
+                    ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"
+                    ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://www.instagram.com/" target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.snapchat.com/" target="_blank"
+                    ><i class="fa-brands fa-snapchat"></i
+                ></a>
+                <a href="https://twitter.com/" target="_blank"
+                    ><i class="fa-brands fa-twitter"></i
+                ></a>
+            </div>
+            <ul class="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="inspiration.html">Get Inspiration</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <p class="copy-right">Future coders <span>&copy;</span> 2022</p>
+        </footer>
+        <a href="#top" class="go-to-top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+
+        <script src="../javascript/main.js"></script>
+    </body>
+</html>
