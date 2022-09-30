@@ -1,0 +1,255 @@
+/* welcome section */
+.welcome-section {
+    height: 70vh;
+    background-image: linear-gradient(
+            rgba(27, 32, 33, 0.7),
+            rgba(27, 32, 33, 0.7)
+        ),
+        url(../images/home-images/main_image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 24px 24px;
+}
+@media (max-width: 767px) {
+    .welcome-section {
+        height: 103vh;
+    }
+}
+
+/* hero description */
+.hero-description {
+    color: var(--second-color);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(3px);
+    border-radius: 0 0 40px 40px;
+}
+.hero-description h1 {
+    font-size: 3.5rem;
+    padding: 40px 0;
+}
+@media (max-width: 767px) {
+    .hero-description h1 {
+        font-size: 3.2rem;
+    }
+}
+.hero-description p {
+    font-size: 1.2rem;
+    text-align: left;
+}
+.hero-description #author {
+    padding-top: 16px;
+    padding-left: 35px;
+    font-weight: bold;
+}
+
+/* product section */
+.product-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+.product-section > h1 {
+    margin-bottom: 50px;
+    color: var(--fourth-color);
+    /* border-bottom: 5px solid var(--first-color); */
+    border-radius: 0 0 5px 5px;
+    position: relative;
+}
+.product-section > h1::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 5px;
+    background: rgb(95, 147, 154);
+    background: -moz-linear-gradient(
+        90deg,
+        rgba(95, 147, 154, 1) 0%,
+        rgba(234, 200, 175, 1) 33%,
+        rgba(234, 200, 175, 1) 67%,
+        rgba(95, 147, 154, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+        90deg,
+        rgba(95, 147, 154, 1) 0%,
+        rgba(234, 200, 175, 1) 33%,
+        rgba(234, 200, 175, 1) 67%,
+        rgba(95, 147, 154, 1) 100%
+    );
+    background: linear-gradient(
+        90deg,
+        rgba(95, 147, 154, 1) 0%,
+        rgba(234, 200, 175, 1) 33%,
+        rgba(234, 200, 175, 1) 67%,
+        rgba(95, 147, 154, 1) 100%
+    );
+    border-radius: 2px;
+}
+.products {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+@media (max-width: 1100px) {
+    .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 70px;
+        justify-items: center;
+    }
+}
+@media (max-width: 600px) {
+    .products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.product-item {
+    width: 240px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+    padding: 16px;
+    padding-top: 26px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--main-transition);
+}
+.product-item:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: scale(1.04);
+}
+.product-item h1 {
+    color: white;
+    font-size: 2.1rem;
+}
+.product-item a {
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 16px;
+    color: var(--first-color);
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#product1 {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgba(255, 255, 255, 0.4),
+            rgba(30, 30, 30, 0.3)
+        ),
+        url(../images/home-images/desk.jpg);
+}
+#product2 {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgba(255, 255, 255, 0.4),
+            rgba(30, 30, 30, 0.3)
+        ),
+        url(../images/home-images/chair.jpg);
+}
+#product3 {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgba(255, 255, 255, 0.4),
+            rgba(30, 30, 30, 0.3)
+        ),
+        url(../images/home-images/accessories.jpg);
+}
+#product4 {
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.3),
+            rgba(30, 30, 30, 0.4),
+            rgba(255, 255, 255, 0.3)
+        ),
+        url(../images/home-images/view-more.jpg);
+    justify-content: center;
+    align-items: center;
+}
+
+/* inspiration section */
+.inspiration-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    height: 90vh;
+    border-radius: 24px 24px 0 0;
+}
+.inspiration-section video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 80%;
+    border-radius: inherit;
+}
+.inspiration-description {
+    color: var(--third-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.inspiration-description h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+    .inspiration-description h1 {
+        font-size: 2.8rem;
+    }
+}
+.inspiration-description p {
+    font-size: 1.5rem;
+    width: 600px;
+    margin-bottom: 50px;
+    border-radius: 24px;
+    text-shadow: 6px 3px 8px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 767px) {
+    .inspiration-description p {
+        width: auto;
+        font-size: 1.3rem;
+    }
+}
+.inspiration-description a {
+    font-size: 1.1rem;
+    padding: 15px;
+    border-radius: 16px;
+    color: var(--fourth-color);
+    background-color: rgba(234, 200, 175, 1);
+    text-shadow: 6px 3px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition-duration: 0.2s;
+}
+.inspiration-description a:hover {
+    color: var(--third-color);
+    background-color: var(--first-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 6px 6px 8px;
+}
+.inspiration-description a:active {
+    background-color: var(--fourth-color);
+}

@@ -1,0 +1,409 @@
+/* welcome-section */
+.welcome-section {
+    height: 70vh;
+    background-image: linear-gradient(
+            rgba(27, 32, 33, 0.7),
+            rgba(27, 32, 33, 0.7)
+        ),
+        url(../images/shop-images/shop-main-img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 24px 24px;
+}
+@media (max-width: 767px) {
+    .welcome-section {
+        height: 103vh;
+    }
+}
+/* .search-box {
+    display: flex;
+}
+.search-input {
+    background-color: white;
+    border: 2px solid var(--third-color-rgb);
+    border-right: none;
+    padding: 0 12px;
+    border-radius: 24px 0 0 24px;
+}
+#mic-icon {
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+}
+#mic-icon:hover {
+    opacity: 0.7;
+}
+.search-input input {
+    padding: 10px 12px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.search-box .search-icon {
+    font-size: 1.2rem;
+    border: none;
+    background: none;
+    background-color: var(--first-color);
+    padding: 0 16px;
+    border-radius: 0 24px 24px 0;
+}
+.search-icon:hover {
+    opacity: 0.7;
+}
+#shop-cart {
+    background: transparent;
+    color: var(--second-color);
+} */
+.hero-description {
+    /* background-color: rgba(238, 238, 238, 0.1); */
+    color: var(--second-color);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    backdrop-filter: blur(3px);
+    border-radius: 0 0 40px 40px;
+}
+.hero-description h1 {
+    font-size: 3.5rem;
+    padding: 40px 0;
+}
+@media (max-width: 767px) {
+    .hero-description h1 {
+        font-size: 3.2rem;
+    }
+}
+.hero-description p {
+    font-size: 1.2rem;
+}
+
+/* product section */
+.product-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+}
+.sort {
+    text-align: end;
+}
+.sort select {
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px dashed #767676;
+}
+.sort option {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.category-name {
+    margin: 30px 0;
+    color: var(--fourth-color);
+    /* border-bottom: 5px solid var(--first-color); */
+    border-radius: 0 0 5px 5px;
+    position: relative;
+}
+.category-name::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 5px;
+    background: rgb(95, 147, 154);
+    background: -moz-linear-gradient(
+        90deg,
+        rgba(95, 147, 154, 1) 0%,
+        rgba(234, 200, 175, 1) 33%,
+        rgba(234, 200, 175, 1) 67%,
+        rgba(95, 147, 154, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+        90deg,
+        rgba(95, 147, 154, 1) 0%,
+        rgba(234, 200, 175, 1) 33%,
+        rgba(234, 200, 175, 1) 67%,
+        rgba(95, 147, 154, 1) 100%
+    );
+    background: linear-gradient(
+        90deg,
+        rgba(95, 147, 154, 1) 0%,
+        rgba(234, 200, 175, 1) 33%,
+        rgba(234, 200, 175, 1) 67%,
+        rgba(95, 147, 154, 1) 100%
+    );
+    border-radius: 2px;
+}
+.products-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+@media (max-width: 1100px) {
+    .products-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 70px;
+        justify-items: center;
+    }
+}
+@media (max-width: 600px) {
+    .products-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.product-item {
+    width: 240px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+    padding: 16px;
+    padding-top: 26px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--main-transition);
+    color: white;
+    /* position: relative; */
+}
+.product-item:hover {
+    /* animation: bgChange 2s ease 0s 1 normal forwards; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: scale(1.04);
+}
+/* @keyframes bgChange {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+} */
+.product-item h1 {
+    color: white;
+    font-size: 2.1rem;
+    text-shadow: 2px 2px 8px #444;
+}
+/* .product-item .product-desctription {
+    display: none;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 24px;
+} */
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: white;
+}
+.product-price > h2 {
+    text-shadow: 2px 2px 8px #ddd;
+}
+.product-details .deleted-price {
+    position: relative;
+    font-size: 1.2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-details .deleted-price::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--first-color);
+    top: 50%;
+}
+.product-details .add-to-cart {
+    padding: 8px;
+    background-color: var(--third-color);
+    border-radius: 6px;
+    border: none;
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.2);
+}
+.desks #product1 {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/desks/flexispot.jpg);
+}
+.desks #product1:hover {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/desks/flexispot-1.jpg);
+}
+/* the idea is to make body transparent and show the description */
+/* .desks #product1:hover::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-radius: 24px;
+    background-color: var(--fourth-color);
+    z-index: 100;
+}
+.desks #product1:hover::after {
+    content: "Enhanced structure and the advanced lifting system boost the loading capacity and ensure maximum stability even at the highest setting.";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    border-radius: 24px;
+    background-color: var(--fourth-color);
+    z-index: 100;
+} */
+
+.desks #product2 {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/desks/alex.jpg);
+}
+.desks #product2:hover {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/desks/alex-1.jpg);
+}
+.desks #product3 {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/desks/rodulf.jpg);
+}
+.desks #product3:hover {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/desks/rodulf-1.jpg);
+}
+.chairs #product1 {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/chairs/herman.jpg);
+}
+.chairs #product1:hover {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/chairs/herman-1.jpg);
+}
+.chairs #product2 {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/chairs/alefjall.jpg);
+}
+.chairs #product2:hover {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/chairs/alefjall-1.jpg);
+}
+.chairs #product3 {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/chairs/msi.jpg);
+}
+.chairs #product3:hover {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/chairs/msi-1.jpg);
+}
+.accessories #product1 {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/accessories/fejka.jpg);
+}
+.accessories #product1:hover {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/accessories/fejka-1.jpg);
+}
+.accessories #product2 {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/accessories/tertial.jpg);
+}
+.accessories #product2:hover {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/accessories/tertial-1.jpg);
+}
+.accessories #product3 {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/accessories/charger.jpg);
+}
+.accessories #product3:hover {
+    background-image: linear-gradient(
+            rgba(30, 30, 30, 0.5),
+            rgb(255, 255, 255, 0),
+            rgba(30, 30, 30, 0.5)
+        ),
+        url(../images/shop-images/accessories/charger-1.jpg);
+}
