@@ -143,8 +143,8 @@ body {
 }
 .mike-video video {
     width: 100%;
-    height:45 vh;
     margin-top: 16px;
+    height: 40vh;
 }
 @media (max-width: 1045px) {
     .mike-video video {
